@@ -28,7 +28,7 @@ jobs:
           pyinstaller --onefile --windowed -n "TeacherWorkloadCalculator" .\teacher_workload.py
 
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: TeacherWorkloadCalculator.exe
           path: ./dist/TeacherWorkloadCalculator.exe
